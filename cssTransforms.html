@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            animation: transformAnimation 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes transformAnimation {
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            50% {
+                transform: translate(100px, 50px) rotate(45deg) scale(1.2);
+            }
+            100% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Move</div>
+</body>
+</html>
