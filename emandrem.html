@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>em vs rem Demo</title>
+  <style>
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .em-example {
+      font-size: 1.5em; /* 1.5 × body = 24px */
+      padding: 1em;     /* 1 × 24px = 24px padding */
+      background-color: #fce4ec;
+      margin-bottom: 20px;
+    }
+
+    .em-example p {
+      font-size: 1.5em; /* 1.5 × 24px = 36px */
+    }
+
+    .rem-example {
+      font-size: 1.5rem; /* 1.5 × 16px = 24px */
+      padding: 1rem;     /* 1 × 16px = 16px padding */
+      background-color: #e3f2fd;
+    }
+
+    .rem-example p {
+      font-size: 1.5rem; /* Always 24px */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="em-example">
+    <h2>Using <code>em</code></h2>
+    <p>This paragraph is nested and scales based on its parent’s size.</p>
+  </div>
+
+  <div class="rem-example">
+    <h2>Using <code>rem</code></h2>
+    <p>This paragraph always uses the root size.</p>
+  </div>
+
+</body>
+</html>
