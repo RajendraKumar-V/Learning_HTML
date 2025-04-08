@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML5 Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #4caf50;
+      border-radius: 50%;
+      position: relative;
+      animation: moveRight 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes moveRight {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+</body>
+</html>
